@@ -1,0 +1,14 @@
+# Arquivos Python
+__pycache__
+*.py[cod]
+*.swp
+
+# Arquivos de Log
+*.log
+
+# Arquivos de Tradução
+*.mo
+
+# Remover arquivos de IDE
+.idea/
+.vscode/
