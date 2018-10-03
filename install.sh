@@ -129,7 +129,7 @@ cd
 
 echo -e "\n---- Baixando core do Servidor ADAX-ERP ----"
 cd /opt
-sudo git clone https://github.com/thiago95macedo/adax-erp.git --depth 1 --branch master --single-branch
+sudo git clone https://github.com/adaxtechnology/adax-erp.git --depth 1 --branch master --single-branch
 
 echo -e "\n---- Criando usuário e diretórios para instalação do Servidor ADAX-ERP ----"
 sudo useradd adax
