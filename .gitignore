@@ -12,3 +12,4 @@ __pycache__
 # Remover arquivos de IDE
 .idea/
 .vscode/
+.vs/
