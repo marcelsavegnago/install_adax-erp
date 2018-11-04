@@ -44,14 +44,6 @@ sudo apt-get install -y libpng12-dev libjpeg-dev libfreetype6-dev libxmlsec1-dev
 sudo apt-get install -y expect-dev xfonts-75dpi xfonts-base default-jre ure libreoffice-java-common libreoffice-writer
 sudo apt-get install -y fonts-symbola node-clean-css node-less texlive-fonts-extra
 
-echo -e "\n---- Instalando pacotes Python ----"
-sudo apt-get install -y python-pypdf2 python-dateutil python-feedparser python-ldap python-libxslt1 python-lxml
-sudo apt-get install -y python-mako python-openid python-psycopg2 python-pybabel python-pychart python-pydot
-sudo apt-get install -y python-pyparsing python-reportlab python-simplejson python-tz python-vatnumber python-vobject
-sudo apt-get install -y python-webdav python-werkzeug python-xlwt python-yaml python-zsi python-docutils python-psutil
-sudo apt-get install -y python-mock python-unittest2 python-jinja2 python-pypdf python-decorator python-requests
-sudo apt-get install -y python-passlib python-pil python-dev python3-dev python-gevent python3-lxml
-
 echo -e "\n--- Instalando pacotes via pip3 --"
 sudo -H pip3 install Babel==2.3.4
 sudo -H pip3 install decorator==4.0.10
