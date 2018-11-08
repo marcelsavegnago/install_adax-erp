@@ -6,7 +6,6 @@
 # ./adax-bin -d base_de_dados --db_port 5000 -u all --stop-after-init
 #
 
-
 #--------------------------------------------------
 # Atualizando Sistema operacional
 #--------------------------------------------------
