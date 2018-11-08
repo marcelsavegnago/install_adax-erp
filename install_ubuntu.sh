@@ -32,8 +32,16 @@ sudo -u postgres psql -e --command "CREATE USER adax WITH SUPERUSER PASSWORD '1q
 #--------------------------------------------------
 # Instalando Dependências
 #--------------------------------------------------
-echo -e "\n--- Instalando Python 3 + pip3 --"
-sudo apt-get install python3 python3-pip python3-suds -y
+echo -e "\n--- Instalando Python + pip --"
+sudo apt-get install python-dev python3 python3-dev python3-pip python3-suds -y
+
+echo -e "\n---- Instalando pacotes Python ----"
+sudo apt-get install -y python-pypdf2 python-dateutil python-feedparser python-ldap python-libxslt1 python-lxml
+sudo apt-get install -y python-mako python-openid python-psycopg2 python-pybabel python-pychart python-pydot
+sudo apt-get install -y python-pyparsing python-reportlab python-simplejson python-tz python-vatnumber python-vobject
+sudo apt-get install -y python-webdav python-werkzeug python-xlwt python-yaml python-zsi python-docutils python-psutil
+sudo apt-get install -y python-mock python-unittest2 python-jinja2 python-pypdf python-decorator python-requests
+sudo apt-get install -y python-passlib python-pil python-gevent python3-lxml
 
 echo -e "\n---- Instalando Ferramentas ----"
 sudo apt-get install wget git git-core zip htop tig cups bzr python-pip gdebi-core npm virtualenv -y
@@ -67,9 +75,11 @@ sudo -H pip3 install psycopg2==2.7.1
 sudo -H pip3 install pydot==1.2.3
 sudo -H pip3 install pyldap==2.4.28
 sudo -H pip3 install pyparsing==2.1.10
+sudo -H pip3 install pypdf
 sudo -H pip3 install PyPDF2==1.26.0
 sudo -H pip3 install pyserial==3.1.1
 sudo -H pip3 install python-dateutil==2.5.3
+sudo -H pip3 install python-openid
 sudo -H pip3 install pytz==2016.7
 sudo -H pip3 install pyusb==1.0.0
 sudo -H pip3 install PyYAML==3.12
@@ -78,8 +88,10 @@ sudo -H pip3 install reportlab==3.3.0
 sudo -H pip3 install requests==2.11.1
 sudo -H pip3 install six==1.10.0
 sudo -H pip3 install suds-jurko==0.6
+sido -H pip3 install unittest2
 sudo -H pip3 install vatnumber==1.2
 sudo -H pip3 install vobject==0.9.3
+sudo -H pip3 install webdav
 sudo -H pip3 install Werkzeug==0.11.11
 sudo -H pip3 install XlsxWriter==0.9.3
 sudo -H pip3 install xlwt==1.3.*
@@ -92,6 +104,7 @@ sudo -H pip3 install paramiko
 sudo -H pip3 install simplejson
 sudo -H pip3 install checksumdir
 sudo -H pip3 install unoconv
+sudo -H pip3 install zeep
 
 echo -e "\n--- Instalando pacotes via pip3 Backup --"
 sudo -H pip3 install pysftp==0.2.8
